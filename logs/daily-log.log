@@ -1,0 +1,356 @@
+2023-03-26 21:31:37,530 [restartedMain] INFO  com.soron.dbm.DbmApplication(logStarting:51) - Starting DbmApplication using Java 19.0.2 with PID 13192 (C:\Eclipse\workspace\dbm\bin\main started by Administrator in C:\Eclipse\workspace\dbm)
+2023-03-26 21:31:37,530 [restartedMain] INFO  com.soron.dbm.DbmApplication(logStartupProfileInfo:638) - The following 1 profile is active: "local"
+2023-03-26 21:31:37,613 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2023-03-26 21:31:37,614 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-26 21:31:37,614 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2023-03-26 21:31:37,614 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-26 21:31:37,643 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner(log:173) - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-03-26 21:31:37,644 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2023-03-26 21:31:37,644 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:291) - Root WebApplicationContext: initialization completed in 113 ms
+2023-03-26 21:31:37,649 [restartedMain] INFO  com.soron.dbm.config.MySQLConfig(dataSource:24) - =========== DataSourceBuilder.create().build() STARTTTTTT =============
+2023-03-26 21:31:37,649 [restartedMain] INFO  com.soron.dbm.config.MySQLConfig(dataSource:25) - HikariDataSource (null)
+2023-03-26 21:31:37,649 [restartedMain] INFO  com.soron.dbm.config.MySQLConfig(dataSource:26) - =========== DataSourceBuilder.create().build() ENDDDDDDDD =============
+2023-03-26 21:31:37,652 [restartedMain] INFO  com.soron.dbm.config.MySQLConfig(sqlSessionFactory:46) - =========== sessionFactory.getObject() STARTTTTT =============
+2023-03-26 21:31:37,655 [restartedMain] INFO  com.soron.dbm.config.MySQLConfig(sqlSessionFactory:47) - org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@50759c0d
+2023-03-26 21:31:37,655 [restartedMain] INFO  com.soron.dbm.config.MySQLConfig(sqlSessionFactory:48) - =========== sessionFactory.getObject() ENDDDDDDD =============
+2023-03-26 21:31:37,728 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2023-03-26 21:31:37,731 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-26 21:31:37,733 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-26 21:31:37,735 [restartedMain] INFO  com.soron.dbm.DbmApplication(logStarted:57) - Started DbmApplication in 0.223 seconds (process running for 776.28)
+2023-03-26 21:31:37,735 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2023-03-26 21:31:43,343 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-26 21:31:43,343 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2023-03-26 21:31:43,344 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 1 ms
+2023-03-26 21:31:43,345 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:110) - HikariPool-7 - Starting...
+2023-03-26 21:31:43,351 [http-nio-8080-exec-1] INFO  jdbc.connection(connectionOpened:541) - 61. Connection opened
+2023-03-26 21:31:43,351 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. Connection.new Connection returned 
+2023-03-26 21:31:43,351 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. Connection.getNetworkTimeout() returned 0
+2023-03-26 21:31:43,351 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. Connection.isReadOnly() returned false
+2023-03-26 21:31:43,351 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. Connection.getAutoCommit() returned true
+2023-03-26 21:31:43,351 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. Connection.isValid(1) returned true
+2023-03-26 21:31:43,351 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. Connection.getTransactionIsolation() returned 4
+2023-03-26 21:31:43,352 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool(checkFailFast:565) - HikariPool-7 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@3ff82980
+2023-03-26 21:31:43,352 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:123) - HikariPool-7 - Start completed.
+2023-03-26 21:31:43,352 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. Connection.getAutoCommit() returned true
+2023-03-26 21:31:43,352 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.new PreparedStatement returned 
+2023-03-26 21:31:43,352 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. Connection.prepareStatement(SELECT no,title,content,writer
+        FROM (
+        	SELECT @ROWNUM := @ROWNUM+1 as rnum, no, title, content, writer
+        	FROM	TBL_BOARD_1, (SELECT @ROWNUM :=0) A
+        	ORDER BY no DESC
+        ) RESULT
+        WHERE rnum > (? - 1) * ?
+        LIMIT ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5517f1c3
+2023-03-26 21:31:43,352 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.setInt(1, 1) returned 
+2023-03-26 21:31:43,352 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.setInt(2, 10) returned 
+2023-03-26 21:31:43,352 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.setInt(3, 10) returned 
+2023-03-26 21:31:43,352 [http-nio-8080-exec-1] INFO  jdbc.sqlonly(sqlOccurred:228) - SELECT no,title,content,writer
+        FROM (
+        	SELECT @ROWNUM := @ROWNUM+1 as rnum, no, title, content, writer
+        	FROM	TBL_BOARD_1, (SELECT @ROWNUM :=0) A
+        	ORDER BY no DESC
+        ) RESULT
+        WHERE rnum > (1 - 1) * 10
+        LIMIT 10
+
+2023-03-26 21:31:43,353 [http-nio-8080-exec-1] INFO  jdbc.sqltiming(sqlTimingOccurred:373) - SELECT no,title,content,writer
+        FROM (
+        	SELECT @ROWNUM := @ROWNUM+1 as rnum, no, title, content, writer
+        	FROM	TBL_BOARD_1, (SELECT @ROWNUM :=0) A
+        	ORDER BY no DESC
+        ) RESULT
+        WHERE rnum > (1 - 1) * 10
+        LIMIT 10
+ {executed in 1 msec}
+2023-03-26 21:31:43,353 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.execute() returned true
+2023-03-26 21:31:43,353 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.new ResultSet returned 
+2023-03-26 21:31:43,353 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@2c757a9c
+2023-03-26 21:31:43,353 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@2e2ea553 - Field level information: 
+	com.mysql.cj.result.Field@642f5a4[dbName=dbm,tableName=RESULT,originalTableName=tbl_board_1,columnName=no,originalColumnName=no,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@6c319546[dbName=dbm,tableName=RESULT,originalTableName=tbl_board_1,columnName=title,originalColumnName=title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@6b97a3c6[dbName=dbm,tableName=RESULT,originalTableName=tbl_board_1,columnName=content,originalColumnName=content,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@304897da[dbName=dbm,tableName=RESULT,originalTableName=tbl_board_1,columnName=writer,originalColumnName=writer,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+2023-03-26 21:31:43,353 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getType() returned 1003
+2023-03-26 21:31:43,353 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:43,353 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 15
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목15
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용15
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 14
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목14
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용14
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 13
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목13
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용13
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 12
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목12
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용12
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 11
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목11
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용11
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 10
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목10
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용10
+2023-03-26 21:31:43,354 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 9
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목9
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용9
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 8
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목8
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용8
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 7
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목7
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용7
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 6
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목6
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용6
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultsettable(resultSetCollected:610) - 
+|---|------|--------|-----------|
+|no |title |content |writer     |
+|---|------|--------|-----------|
+|15 |제목15  |내용내용15  |soronprfbs |
+|14 |제목14  |내용내용14  |soronprfbs |
+|13 |제목13  |내용내용13  |soronprfbs |
+|12 |제목12  |내용내용12  |soronprfbs |
+|11 |제목11  |내용내용11  |soronprfbs |
+|10 |제목10  |내용내용10  |soronprfbs |
+|9  |제목9   |내용내용9   |soronprfbs |
+|8  |제목8   |내용내용8   |soronprfbs |
+|7  |제목7   |내용내용7   |soronprfbs |
+|6  |제목6   |내용내용6   |soronprfbs |
+|---|------|--------|-----------|
+
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned false
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.close() returned void
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataUsingInfoSchema@414d8167
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.getMoreResults() returned false
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.getUpdateCount() returned -1
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.close() returned 
+2023-03-26 21:31:43,355 [http-nio-8080-exec-1] INFO  jdbc.audit(methodReturned:175) - 61. Connection.clearWarnings() returned 
+2023-03-26 21:31:43,469 [HikariPool-7 connection adder] INFO  jdbc.connection(connectionOpened:541) - 62. Connection opened
+2023-03-26 21:31:43,469 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 62. Connection.new Connection returned 
+2023-03-26 21:31:43,469 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 62. Connection.isReadOnly() returned false
+2023-03-26 21:31:43,469 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 62. Connection.getAutoCommit() returned true
+2023-03-26 21:31:43,486 [HikariPool-7 connection adder] INFO  jdbc.connection(connectionOpened:541) - 63. Connection opened
+2023-03-26 21:31:43,486 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 63. Connection.new Connection returned 
+2023-03-26 21:31:43,487 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 63. Connection.isReadOnly() returned false
+2023-03-26 21:31:43,487 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 63. Connection.getAutoCommit() returned true
+2023-03-26 21:31:43,515 [HikariPool-7 connection adder] INFO  jdbc.connection(connectionOpened:541) - 64. Connection opened
+2023-03-26 21:31:43,515 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 64. Connection.new Connection returned 
+2023-03-26 21:31:43,515 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 64. Connection.isReadOnly() returned false
+2023-03-26 21:31:43,515 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 64. Connection.getAutoCommit() returned true
+2023-03-26 21:31:43,530 [HikariPool-7 connection adder] INFO  jdbc.connection(connectionOpened:541) - 65. Connection opened
+2023-03-26 21:31:43,530 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 65. Connection.new Connection returned 
+2023-03-26 21:31:43,531 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 65. Connection.isReadOnly() returned false
+2023-03-26 21:31:43,531 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 65. Connection.getAutoCommit() returned true
+2023-03-26 21:31:43,545 [HikariPool-7 connection adder] INFO  jdbc.connection(connectionOpened:541) - 66. Connection opened
+2023-03-26 21:31:43,546 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 66. Connection.new Connection returned 
+2023-03-26 21:31:43,546 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 66. Connection.isReadOnly() returned false
+2023-03-26 21:31:43,546 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 66. Connection.getAutoCommit() returned true
+2023-03-26 21:31:43,561 [HikariPool-7 connection adder] INFO  jdbc.connection(connectionOpened:541) - 67. Connection opened
+2023-03-26 21:31:43,562 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 67. Connection.new Connection returned 
+2023-03-26 21:31:43,562 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 67. Connection.isReadOnly() returned false
+2023-03-26 21:31:43,562 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 67. Connection.getAutoCommit() returned true
+2023-03-26 21:31:43,577 [HikariPool-7 connection adder] INFO  jdbc.connection(connectionOpened:541) - 68. Connection opened
+2023-03-26 21:31:43,577 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 68. Connection.new Connection returned 
+2023-03-26 21:31:43,578 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 68. Connection.isReadOnly() returned false
+2023-03-26 21:31:43,578 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 68. Connection.getAutoCommit() returned true
+2023-03-26 21:31:43,593 [HikariPool-7 connection adder] INFO  jdbc.connection(connectionOpened:541) - 69. Connection opened
+2023-03-26 21:31:43,593 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 69. Connection.new Connection returned 
+2023-03-26 21:31:43,594 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 69. Connection.isReadOnly() returned false
+2023-03-26 21:31:43,594 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 69. Connection.getAutoCommit() returned true
+2023-03-26 21:31:43,611 [HikariPool-7 connection adder] INFO  jdbc.connection(connectionOpened:541) - 70. Connection opened
+2023-03-26 21:31:43,611 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 70. Connection.new Connection returned 
+2023-03-26 21:31:43,611 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 70. Connection.isReadOnly() returned false
+2023-03-26 21:31:43,611 [HikariPool-7 connection adder] INFO  jdbc.audit(methodReturned:175) - 70. Connection.getAutoCommit() returned true
+2023-03-26 21:31:58,358 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. Connection.isValid(5) returned true
+2023-03-26 21:31:58,359 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. Connection.getAutoCommit() returned true
+2023-03-26 21:31:58,359 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.new PreparedStatement returned 
+2023-03-26 21:31:58,359 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. Connection.prepareStatement(SELECT no,title,content,writer
+        FROM (
+        	SELECT @ROWNUM := @ROWNUM+1 as rnum, no, title, content, writer
+        	FROM	TBL_BOARD_1, (SELECT @ROWNUM :=0) A
+        	ORDER BY no DESC
+        ) RESULT
+        WHERE rnum > (? - 1) * ?
+        LIMIT ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@975ff3b
+2023-03-26 21:31:58,359 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.setInt(1, 1) returned 
+2023-03-26 21:31:58,359 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.setInt(2, 10) returned 
+2023-03-26 21:31:58,359 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.setInt(3, 10) returned 
+2023-03-26 21:31:58,359 [http-nio-8080-exec-2] INFO  jdbc.sqlonly(sqlOccurred:228) - SELECT no,title,content,writer
+        FROM (
+        	SELECT @ROWNUM := @ROWNUM+1 as rnum, no, title, content, writer
+        	FROM	TBL_BOARD_1, (SELECT @ROWNUM :=0) A
+        	ORDER BY no DESC
+        ) RESULT
+        WHERE rnum > (1 - 1) * 10
+        LIMIT 10
+
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.sqltiming(sqlTimingOccurred:373) - SELECT no,title,content,writer
+        FROM (
+        	SELECT @ROWNUM := @ROWNUM+1 as rnum, no, title, content, writer
+        	FROM	TBL_BOARD_1, (SELECT @ROWNUM :=0) A
+        	ORDER BY no DESC
+        ) RESULT
+        WHERE rnum > (1 - 1) * 10
+        LIMIT 10
+ {executed in 1 msec}
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.execute() returned true
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.new ResultSet returned 
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@7b21065
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@38d944b - Field level information: 
+	com.mysql.cj.result.Field@468f1a5e[dbName=dbm,tableName=RESULT,originalTableName=tbl_board_1,columnName=no,originalColumnName=no,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@6025b993[dbName=dbm,tableName=RESULT,originalTableName=tbl_board_1,columnName=title,originalColumnName=title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@7783bcca[dbName=dbm,tableName=RESULT,originalTableName=tbl_board_1,columnName=content,originalColumnName=content,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.cj.result.Field@18c341bd[dbName=dbm,tableName=RESULT,originalTableName=tbl_board_1,columnName=writer,originalColumnName=writer,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=33, charsetName=UTF-8]
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getType() returned 1003
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 15
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목15
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용15
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 14
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목14
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용14
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 13
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목13
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용13
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 12
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목12
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용12
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:58,360 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 11
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목11
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용11
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 10
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목10
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용10
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 9
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목9
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용9
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 8
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목8
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용8
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 7
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목7
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용7
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:58,361 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned true
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(no) returned 6
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(title) returned 제목6
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(content) returned 내용내용6
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.getString(writer) returned soronprfbs
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.isClosed() returned false
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.resultsettable(resultSetCollected:610) - 
+|---|------|--------|-----------|
+|no |title |content |writer     |
+|---|------|--------|-----------|
+|15 |제목15  |내용내용15  |soronprfbs |
+|14 |제목14  |내용내용14  |soronprfbs |
+|13 |제목13  |내용내용13  |soronprfbs |
+|12 |제목12  |내용내용12  |soronprfbs |
+|11 |제목11  |내용내용11  |soronprfbs |
+|10 |제목10  |내용내용10  |soronprfbs |
+|9  |제목9   |내용내용9   |soronprfbs |
+|8  |제목8   |내용내용8   |soronprfbs |
+|7  |제목7   |내용내용7   |soronprfbs |
+|6  |제목6   |내용내용6   |soronprfbs |
+|---|------|--------|-----------|
+
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.next() returned false
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.resultset(methodReturned:175) - 61. ResultSet.close() returned void
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataUsingInfoSchema@6b043977
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.getMoreResults() returned false
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.getUpdateCount() returned -1
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. PreparedStatement.close() returned 
+2023-03-26 21:31:58,362 [http-nio-8080-exec-2] INFO  jdbc.audit(methodReturned:175) - 61. Connection.clearWarnings() returned 
+2023-03-26 21:33:16,262 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-26 21:33:16,268 [Thread-63] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-26 21:33:16,268 [Thread-63] INFO  org.apache.catalina.core.StandardService(log:173) - Stopping service [Tomcat]
+2023-03-26 21:33:16,268 [Thread-63] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-26 21:33:16,269 [Thread-63] WARN  org.apache.catalina.loader.WebappClassLoaderBase(log:173) - The web application [ROOT] appears to have started a thread named [HikariPool-7 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1589)
+2023-03-26 21:33:16,270 [Thread-63] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-26 21:33:16,270 [Thread-63] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-26 21:33:16,270 [Thread-63] INFO  com.zaxxer.hikari.HikariDataSource(close:350) - HikariPool-7 - Shutdown initiated...
+2023-03-26 21:33:16,271 [HikariPool-7 connection closer] INFO  jdbc.connection(connectionClosed:568) - 61. Connection closed
+2023-03-26 21:33:16,271 [HikariPool-7 connection closer] INFO  jdbc.audit(methodReturned:175) - 61. Connection.close() returned 
+2023-03-26 21:33:16,271 [HikariPool-7 connection closer] INFO  jdbc.connection(connectionClosed:568) - 62. Connection closed
+2023-03-26 21:33:16,271 [HikariPool-7 connection closer] INFO  jdbc.audit(methodReturned:175) - 62. Connection.close() returned 
+2023-03-26 21:33:16,272 [HikariPool-7 connection closer] INFO  jdbc.connection(connectionClosed:568) - 63. Connection closed
+2023-03-26 21:33:16,272 [HikariPool-7 connection closer] INFO  jdbc.audit(methodReturned:175) - 63. Connection.close() returned 
+2023-03-26 21:33:16,272 [HikariPool-7 connection closer] INFO  jdbc.connection(connectionClosed:568) - 64. Connection closed
+2023-03-26 21:33:16,272 [HikariPool-7 connection closer] INFO  jdbc.audit(methodReturned:175) - 64. Connection.close() returned 
+2023-03-26 21:33:16,272 [HikariPool-7 connection closer] INFO  jdbc.connection(connectionClosed:568) - 65. Connection closed
+2023-03-26 21:33:16,272 [HikariPool-7 connection closer] INFO  jdbc.audit(methodReturned:175) - 65. Connection.close() returned 
+2023-03-26 21:33:16,272 [HikariPool-7 connection closer] INFO  jdbc.connection(connectionClosed:568) - 66. Connection closed
+2023-03-26 21:33:16,272 [HikariPool-7 connection closer] INFO  jdbc.audit(methodReturned:175) - 66. Connection.close() returned 
+2023-03-26 21:33:16,272 [HikariPool-7 connection closer] INFO  jdbc.connection(connectionClosed:568) - 67. Connection closed
+2023-03-26 21:33:16,272 [HikariPool-7 connection closer] INFO  jdbc.audit(methodReturned:175) - 67. Connection.close() returned 
+2023-03-26 21:33:16,272 [HikariPool-7 connection closer] INFO  jdbc.connection(connectionClosed:568) - 68. Connection closed
+2023-03-26 21:33:16,272 [HikariPool-7 connection closer] INFO  jdbc.audit(methodReturned:175) - 68. Connection.close() returned 
+2023-03-26 21:33:16,273 [HikariPool-7 connection closer] INFO  jdbc.connection(connectionClosed:568) - 69. Connection closed
+2023-03-26 21:33:16,273 [HikariPool-7 connection closer] INFO  jdbc.audit(methodReturned:175) - 69. Connection.close() returned 
+2023-03-26 21:33:16,273 [HikariPool-7 connection closer] INFO  jdbc.connection(connectionClosed:568) - 70. Connection closed
+2023-03-26 21:33:16,273 [HikariPool-7 connection closer] INFO  jdbc.audit(methodReturned:175) - 70. Connection.close() returned 
+2023-03-26 21:33:16,273 [Thread-63] INFO  com.zaxxer.hikari.HikariDataSource(close:352) - HikariPool-7 - Shutdown completed.

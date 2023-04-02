@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soron.dbm.dao.Board1DAO">
+    <select id="selList"	resultType="com.soron.dbm.dto.Board1DTO">
+		SELECT no,title,content,writer,ins_time,udt_time,hits
+		FROM (
+			SELECT @ROWNUM := @ROWNUM+1 as rnum, no, title, content, writer, ins_time, udt_time, hits
+			FROM TBL_BOARD_1, (SELECT @ROWNUM :=0) A
+			ORDER BY no DESC
+		) RESULT
+		WHERE rnum > (#{pageNum} - 1) * #{amount}
+		LIMIT #{amount}
+    </select>
+    <select id="selPostByNo" resultType="com.soron.dbm.dto.Board1DTO">
+        SELECT
+            no,
+            title,
+            content,            
+        	writer,
+        	ins_time,
+        	udt_time,
+        	hits
+        FROM
+        	TBL_BOARD_1
+        WHERE
+        	no = #{no}
+    </select>
+    <select id="selTotCnt" resultType="int">
+        SELECT
+            COUNT(*) as totCnt
+        FROM
+        	TBL_BOARD_1      
+    </select>
+    <insert id="insPost" parameterType="com.soron.dbm.dto.Board1DTO" useGeneratedKeys="true" keyProperty="no">
+        INSERT INTO TBL_BOARD_1(title, content, writer, ins_time, udt_time)
+        VALUES(#{title}, #{content}, #{writer}, #{ins_time}, #{udt_time})
+    </insert>
+     <update id="udtPostHits" parameterType="com.soron.dbm.dto.Board1DTO">
+    	UPDATE 
+   	    	TBL_BOARD_1
+   		SET hits = hits+1   			
+    	WHERE no = #{no}
+    </update>
+    <update id="udtPost" parameterType="com.soron.dbm.dto.Board1DTO">
+    	UPDATE 
+   	    	TBL_BOARD_1
+   		SET title = #{title},
+   			content = #{content},
+   			udt_time = #{udt_time}
+    	WHERE no = #{no}
+    </update>
+    <delete id="delPost" parameterType="com.soron.dbm.dto.Board1DTO">
+    	DELETE FROM	
+    		TBL_BOARD_1
+    	WHERE no = #{no}	
+    </delete>
+</mapper>
+    <!-- <select id="selPostByNo" parameterType="User" resultType="com.soron.dbm.dto.Board1DTO">
+        SELECT
+            no,
+            title,
+            content
+        FROM
+            TBL_BOARD_1
+        WHERE
+        	no = #{no}
+    </select> -->

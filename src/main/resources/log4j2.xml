@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Properties>
+		<Property name="logFileName">daily-log</Property>
+		//생성될 로그파일 이름
+		<Property name="BASE_DIR">/root/logs</Property>
+		// 로그파일이 생성될 경로
+		//콘솔에 출력될 로그 레이아웃
+		<Property name="consoleLayout">%style{%d{ISO8601}}{black} %highlight{%-5level
+			}[%style{%t}{bright,blue}] %style{%C{1.}}{bright,yellow}:
+			%msg%n%throwable</Property>
+		<Property name="fileLayout">%d [%t] %-5level %c(%M:%L) - %m%n</Property>
+		//생성될 로그 레이아웃
+	</Properties>
+
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="$[%t] %-5level %logger{1.} - %msg%n" charset="UTF-8" />
+		</Console>
+
+		<!-- 파일 -->
+		<RollingFile name="RollingFile">
+			<FileName>C:/log/mylog.txt</FileName>
+			<FilePattern>C:/log/%d{yyyy-MM-dd}/mylog.zip</FilePattern>
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss} %5p [%c] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="30"
+					modulate="true" />
+			</Policies>
+		</RollingFile>
+
+		<RollingFile name="RollingFileError">
+			<FileName>C:/log/mylog_error.txt</FileName>
+			<FilePattern>C:/log/%d{yyyy-MM-dd}/mylog_error.zip</FilePattern>
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss} %5p [%c] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"	modulate="true" />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+
+	<Loggers>
+		<!-- 스프링 프레임워크에서 찍는건 level을 info로 설정 -->
+		<logger name="org.springframework" level="info" additivity="false" >
+			<AppenderRef ref="console" />
+			<AppenderRef ref="RollingFileError" level="error" />
+		</logger>
+		<Logger name="kr.or.ddit" level="off" additivity="false">
+			<AppenderRef ref="console" />
+		</Logger>
+		<Logger name="jdbc.sqltiming" level="warn" additivity="false">
+			<AppenderRef ref="console" />
+			<AppenderRef ref="RollingFileError" level="error" />
+		</Logger>
+		<Logger name="jdbc.resultsettable" level="off" additivity="false">
+			<AppenderRef ref="console" />
+		</Logger>
+		<logger name="org.apache.commons" level="OFF" additivity="false">
+			<appender-ref ref="console"/>
+		</logger>
+		<Root level="off">
+			<AppenderRef ref="console" />
+			<AppenderRef ref="RollingFile" />
+			<AppenderRef ref="RollingFileError" level="error" />
+		</Root>
+		<!-- <Root level="WARN"> <AppenderRef ref="console" /> <AppenderRef ref="RollingFile" 
+			/> <AppenderRef ref="RollingFileError" level="ERROR" /> </Root> -->
+
+		<!-- 스프링 프레임워크에서 찍는건 level을 info로 설정 -->
+		<!-- <logger name="com.osci.atlasagent" additivity="true" > <AppenderRef 
+			ref="RollingFile"/> <AppenderRef ref="RollingFileError" level = "ERROR"/> 
+			</logger> -->
+
+	</Loggers>
+</Configuration>

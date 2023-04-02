@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soron.dbm.dao.DbmDAO">
+    <select id="selTableList"	resultType="com.soron.dbm.dto.DbmTableDTO">
+		SELECT 	rnum as no,
+				table_schema,
+				table_name,
+				table_rows,
+				create_time,
+				ifnull(update_time,create_time) as update_time,
+				table_comment
+		FROM (
+			SELECT	@rownum := @rownum + 1 AS rnum,
+					table_schema,
+					table_name,
+					table_rows,
+					create_time,
+			        update_time,
+			        table_comment
+			FROM INFORMATION_SCHEMA.TABLES ,(select @rownum :=0) as r
+			WHERE TABLE_SCHEMA ='dbm' AND TABLE_TYPE NOT LIKE 'SYSTEM VIEW' 
+			ORDER BY TABLE_NAME DESC		
+		) RESULT
+		WHERE rnum > (#{pageNum} - 1) * #{amount}
+		LIMIT #{amount}
+    </select>
+    <select id="selTableTotCnt" resultType="int">
+        SELECT COUNT(*) as totCnt
+        FROM INFORMATION_SCHEMA.TABLES
+		WHERE TABLE_SCHEMA ='dbm' AND TABLE_TYPE NOT LIKE 'SYSTEM VIEW'     
+    </select>
+    <select id="selColumnList" resultType="com.soron.dbm.dto.DbmColumnDTO">
+        SELECT	ordinal_position,
+				column_name,				
+		        column_default,
+		        if(is_nullable='no','NOT NULL','NULL')as is_nullable,
+		        column_type,
+		        column_key,
+		        extra,
+		        column_comment
+		FROM INFORMATION_SCHEMA.COLUMNS
+		WHERE  TABLE_SCHEMA = 'dbm' AND TABLE_NAME = #{table_Name}   
+		ORDER BY ORDINAL_POSITION   
+    </select>    
+     <update id="alterColumn" parameterType="com.soron.dbm.dto.DbmColumnDTO">
+     	ALTER TABLE ${tableName}
+     	CHANGE ${oldColName} ${newColName} ${colType} ${isNull} ${defaultVal} ${extra}
+     	COMMENT #{colComment};	
+     	
+    	<!-- ALTER TABLE ${tableName}
+     	MODIFY ${newColName} ${colType} COMMENT #{colComment}; -->     	
+    </update>
+</mapper>
+    <!-- <select id="selPostByNo" parameterType="User" resultType="com.soron.dbm.dto.Board1DTO">
+        SELECT
+            no,
+            title,
+            content
+        FROM
+            TBL_BOARD_1
+        WHERE
+        	no = #{no}
+    </select> -->
